@@ -1,0 +1,9 @@
+# Core Data & Modeling
+pandas>=2.0.0
+
+# Document & Presentation Generation
+reportlab>=4.0.0
+
+# Automated Testing (Optional, works with standard unittest)
+pytest>=7.0.0
+

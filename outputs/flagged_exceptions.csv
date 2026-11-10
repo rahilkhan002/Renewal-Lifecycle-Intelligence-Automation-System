@@ -1,0 +1,9 @@
+invoice_id,payment_id,student_id,student_name,amount_paid,outcome_state,reason_code,owner,action_detail
+84905,pay_P8x99****05,68105,Re***h Pa***l,11000.0,CAPACITY_EXCEPTION,ERR_BATCH_CAPACITY_FULL,ACADEMIC_OPS,Batch 9205.0 at maximum capacity (6/6). Requires batch split or reassignment.
+84906,pay_S9m99****06,68106,Zo***a Kh***n,18000.0,ORPHANED_INVOICE,ERR_MISSING_FACULTY_FORM,FACULTY_OPS,Paid invoice has no matching faculty form submission. Trigger teacher alert.
+84908,pay_S9m99****08,68108,Si***a Ma***a,22000.0,DUPLICATE_FORM_EXCEPTION,ERR_DUPLICATE_FACULTY_FORMS,OPS_LEAD,Multiple faculty forms filed for this single invoice. Quarantine to prevent duplicate requests.
+84909,pay_P8x99****09,68109,Ad***t Ku***i,5250.0,FINANCIAL_EXCEPTION,ERR_UNDERPAYMENT,FINANCE,Partial payment received: Paid 5250.0 < Expected 10500.0. Dispatch balance link.
+84910,pay_P8x99****10,68110,My***a Re***y,11000.0,ORPHANED_INVOICE,ERR_MISSING_FACULTY_FORM,FACULTY_OPS,Paid invoice has no matching faculty form submission. Trigger teacher alert.
+84911,NONE,68111,Is***n Gu***a,12000.0,PAYMENT_EXCEPTION,ERR_PAYMENT_NOT_PAID,FINANCE,Gateway payment status is 'Failed'. Reject renewal and hold scheduling.
+84912,pay_P8x99****12,68112,Ta***a Me***n,9000.0,AWAITING_PARENT_ACTION,HOLD_PARENT_SLOT_SELECTION,PARENT_SUPPORT,Parent requested timing change. Dispatch interactive WhatsApp slot selection.
+84913,pay_P8x99****13,68113,De***a Me***a,11500.0,RECONCILIATION_EXCEPTION,ERR_BROKEN_INVOICE_LINK,OPERATIONS,Faculty form miskeyed invoice reference as '84931'. Match found via student ID 68113.

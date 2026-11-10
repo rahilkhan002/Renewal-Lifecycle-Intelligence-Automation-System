@@ -1,0 +1,3 @@
+invoice_id,payment_id,student_id,student_name,amount_paid,outcome_state,reason_code,owner,action_detail
+84901,pay_P8x99****01,68101,Aa***v Sh***a,12000.0,ALREADY_COMPLETED,INFO_ALREADY_SCHEDULED,NONE,Classes already scheduled (2 active rows). Idempotent bypass.
+84902,pay_P8x99****02,68102,Di***a Na***r,10500.0,READY_FOR_ALLOCATION_REVIEW,ACTION_ALLOCATION_REQUIRED,ACADEMIC_OPS,Form approved; batch allocation pending for Batch 9202.0 (AVAILABLE (0 seats remaining after hold)).

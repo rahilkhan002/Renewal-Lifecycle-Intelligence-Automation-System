@@ -1,0 +1,158 @@
+[
+  {
+    "invoice_id": "84901",
+    "outcome_state": "ALREADY_COMPLETED",
+    "reason_code": "INFO_ALREADY_SCHEDULED",
+    "assigned_owner": "NONE",
+    "notification": {
+      "channel": "WHATSAPP_PARENT",
+      "recipient": "+91-9811XXXX01",
+      "template": "schedule_already_active",
+      "message": "Hello Pr***a Sh***a, renewal confirmation for Aa***v Sh***a is active. Your upcoming class schedule is confirmed on the student portal: https://bambinos.live/portal/schedule"
+    }
+  },
+  {
+    "invoice_id": "84902",
+    "outcome_state": "READY_FOR_ALLOCATION_REVIEW",
+    "reason_code": "ACTION_ALLOCATION_REQUIRED",
+    "assigned_owner": "ACADEMIC_OPS",
+    "notification": {
+      "channel": "SLACK_ACADEMIC_OPS",
+      "recipient": "#academic-scheduling",
+      "template": "batch_allocation_ready",
+      "message": "[ALLOCATION ACTION] Invoice 84902 for Di***a Na***r (ID: 68102) is approved. Target Batch 9202.0 has capacity available. Click to authorize schedule generation."
+    }
+  },
+  {
+    "invoice_id": "84903",
+    "outcome_state": "AWAITING_FACULTY_APPROVAL",
+    "reason_code": "ACTION_OPS_VERIFY_FORM",
+    "assigned_owner": "OPERATIONS",
+    "notification": {
+      "channel": "SLACK_OPS_CARD",
+      "recipient": "#ops-renewal-verification",
+      "template": "ops_1click_verification",
+      "message": "[OPS VERIFICATION] Teacher Acharya Nancy S*** filed renewal for Ka***r Ve***a. Payment of INR 9000.0 verified. Review and 1-click approve: https://internal.bambinos.live/ops/verify?inv=84903"
+    }
+  },
+  {
+    "invoice_id": "84904",
+    "outcome_state": "AWAITING_FACULTY_APPROVAL",
+    "reason_code": "ACTION_OPS_VERIFY_FORM",
+    "assigned_owner": "OPERATIONS",
+    "notification": {
+      "channel": "SLACK_OPS_CARD",
+      "recipient": "#ops-renewal-verification",
+      "template": "ops_1click_verification",
+      "message": "[OPS VERIFICATION] Teacher Ms. Rhea B*** filed renewal for An***a Iy***r. Payment of INR 12000.0 verified. Review and 1-click approve: https://internal.bambinos.live/ops/verify?inv=84904"
+    }
+  },
+  {
+    "invoice_id": "84905",
+    "outcome_state": "CAPACITY_EXCEPTION",
+    "reason_code": "ERR_BATCH_CAPACITY_FULL",
+    "assigned_owner": "ACADEMIC_OPS",
+    "notification": {
+      "channel": "SLACK_ACADEMIC_OPS",
+      "recipient": "#academic-ops-escalation",
+      "template": "batch_capacity_overflow",
+      "message": "[CAPACITY ALERT] Invoice 84905 for Re***h Pa***l cannot be scheduled: Batch 9205.0 is at maximum capacity (6/6). Immediate action required: Authorize section split or assign alternate slot."
+    }
+  },
+  {
+    "invoice_id": "84906",
+    "outcome_state": "ORPHANED_INVOICE",
+    "reason_code": "ERR_MISSING_FACULTY_FORM",
+    "assigned_owner": "FACULTY_OPS",
+    "notification": {
+      "channel": "WHATSAPP_TEACHER",
+      "recipient": "Ms. Rhea B***",
+      "template": "teacher_form_reminder",
+      "message": "Hi Ms. Rhea B***, parent of Zo***a Kh***n has completed renewal payment (Invoice #84906). Please submit the renewal form or confirm continuation in 1 click: https://teacher.bambinos.live/quick-renew?inv=84906"
+    }
+  },
+  {
+    "invoice_id": "84907",
+    "outcome_state": "AWAITING_FACULTY_APPROVAL",
+    "reason_code": "ACTION_OPS_VERIFY_FORM",
+    "assigned_owner": "OPERATIONS",
+    "notification": {
+      "channel": "SLACK_OPS_CARD",
+      "recipient": "#ops-renewal-verification",
+      "template": "ops_1click_verification",
+      "message": "[OPS VERIFICATION] Teacher Ms. Simran D*** filed renewal for Vi***n Jo***i. Payment of INR 7600.0 verified. Review and 1-click approve: https://internal.bambinos.live/ops/verify?inv=84907"
+    }
+  },
+  {
+    "invoice_id": "84908",
+    "outcome_state": "DUPLICATE_FORM_EXCEPTION",
+    "reason_code": "ERR_DUPLICATE_FACULTY_FORMS",
+    "assigned_owner": "OPS_LEAD",
+    "notification": {
+      "channel": "SLACK_OPS_CARD",
+      "recipient": "#ops-discrepancies",
+      "template": "duplicate_form_quarantine",
+      "message": "[DUPLICATE HOLD] Invoice 84908 has multiple faculty form submissions filed by Acharya Nancy S***. Both records quarantined to prevent double-booking. Review forms: https://internal.bambinos.live/ops/duplicate?inv=84908"
+    }
+  },
+  {
+    "invoice_id": "84909",
+    "outcome_state": "FINANCIAL_EXCEPTION",
+    "reason_code": "ERR_UNDERPAYMENT",
+    "assigned_owner": "FINANCE",
+    "notification": {
+      "channel": "WHATSAPP_PARENT",
+      "recipient": "+91-9899XXXX09",
+      "template": "balance_payment_link",
+      "message": "Hello Sn***a Ku***i, we received partial payment of INR 5250.0 for Ad***t Ku***i's renewal. To confirm the seat and schedule classes, please complete the balance payment: https://pay.bambinos.live/balance?inv=84909"
+    }
+  },
+  {
+    "invoice_id": "84910",
+    "outcome_state": "ORPHANED_INVOICE",
+    "reason_code": "ERR_MISSING_FACULTY_FORM",
+    "assigned_owner": "FACULTY_OPS",
+    "notification": {
+      "channel": "WHATSAPP_TEACHER",
+      "recipient": "Coach Arvind K***",
+      "template": "teacher_form_reminder",
+      "message": "Hi Coach Arvind K***, parent of My***a Re***y has completed renewal payment (Invoice #84910). Please submit the renewal form or confirm continuation in 1 click: https://teacher.bambinos.live/quick-renew?inv=84910"
+    }
+  },
+  {
+    "invoice_id": "84911",
+    "outcome_state": "PAYMENT_EXCEPTION",
+    "reason_code": "ERR_PAYMENT_NOT_PAID",
+    "assigned_owner": "FINANCE",
+    "notification": {
+      "channel": "SLACK_FINANCE_ALERT",
+      "recipient": "#finance-reconciliation",
+      "template": "payment_failure_reject",
+      "message": "[PAYMENT FAILED] Teacher submitted renewal form for Invoice 84911, but payment gateway status is 'Failed'. Scheduling blocked. Reject form and notify parent."
+    }
+  },
+  {
+    "invoice_id": "84912",
+    "outcome_state": "AWAITING_PARENT_ACTION",
+    "reason_code": "HOLD_PARENT_SLOT_SELECTION",
+    "assigned_owner": "PARENT_SUPPORT",
+    "notification": {
+      "channel": "WHATSAPP_PARENT",
+      "recipient": "+91-9822XXXX12",
+      "template": "interactive_slot_picker",
+      "message": "Hello De***k Me***n, thank you for renewing Ta***a Me***n's classes! You requested a new batch time. Please choose your preferred slot from live available batches here: https://bambinos.live/slot-picker?inv=84912"
+    }
+  },
+  {
+    "invoice_id": "84913",
+    "outcome_state": "RECONCILIATION_EXCEPTION",
+    "reason_code": "ERR_BROKEN_INVOICE_LINK",
+    "assigned_owner": "OPERATIONS",
+    "notification": {
+      "channel": "SLACK_OPS_CARD",
+      "recipient": "#ops-discrepancies",
+      "template": "fuzzy_match_relink",
+      "message": "[TYPO MISMATCH] Form 3313 filed with invoice 84931 matched student De***a Me***a (ID: 68113) with paid invoice #84913. AI Match Confidence: 99.4%. Click to approve 1-click re-link."
+    }
+  }
+]
