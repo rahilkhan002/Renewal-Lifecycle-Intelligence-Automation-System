@@ -333,8 +333,8 @@ All communication payloads are generated deterministically and exported directly
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/candidate/bambinos-renewal-automation.git
-cd bambinos-renewal-automation
+git clone https://github.com/rahilkhan002/Renewal-Lifecycle-Intelligence-Automation-System.git
+cd Renewal-Lifecycle-Intelligence-Automation-System
 
 # Install dependencies
 pip install -r requirements.txt

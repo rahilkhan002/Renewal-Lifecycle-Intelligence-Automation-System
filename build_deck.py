@@ -1187,7 +1187,7 @@ def build_slide_12(c):
     c.setFillColor(HexColor("#94A3B8"))
     c.setFont("Helvetica", 8)
     c.drawString(290, 65, "All Deliverables (A, B, C, D) fully implemented, empirically validated, and packaged for production evaluation.")
-    c.drawString(55, 50, "Repository: https://github.com/candidate/bambinos-renewal-automation | Timebox: 48–72 Hours | Status: Submission Complete")
+    c.drawString(55, 50, "Repository: https://github.com/rahilkhan002/Renewal-Lifecycle-Intelligence-Automation-System | Timebox: 48–72 Hours | Status: Submission Complete")
 
     c.showPage()
 
