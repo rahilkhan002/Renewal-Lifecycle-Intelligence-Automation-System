@@ -17,3 +17,6 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
+
+# Local Confidential Report (Kept locally on system only)
+PROJECT_REPORT.md
