@@ -306,23 +306,6 @@ All communication payloads are generated deterministically and exported directly
 
 ---
 
-## Loom Video Walkthrough Script (2.5-Minute Target)
-
-- **0:00 – 0:30 | The Strategic Reframe:**  
-  *"Hi Bambinos team. When analyzing the renewal pipeline, I realized this is an operational continuity challenge rather than just an invoice reconciliation task. Inspecting the five official datasets revealed that over 50% of records in the test suite are operational failure modes—including duplicate teacher forms on invoice 84908, a full batch on 84905, and broken invoice links on 84913. My solution is a two-gate Renewal Lifecycle Intelligence System that enforces strict financial and capacity verification before any booking occurs."*
-- **0:30 – 1:15 | Walking Through the Code Architecture:**  
-  *Visual:* Screen share showing `src/engine.py` and `tests/test_reconciliation.py`.  
-  *Talking Points:* *"Notice the architecture. We pre-scan invoices to quarantine duplicate payment IDs before processing. We parse all currency values using Decimal precision to catch partial payments like invoice 84909. In Gate 2, we evaluate batch capacity against active enrollment, ensuring full batches like 9205 are flagged rather than over-allocated."*  
-  *Action:* Run `python -m unittest tests/test_reconciliation.py` in the terminal to show all tests passing.
-- **1:15 – 1:50 | The 13-Invoice Reconciliation Output:**  
-  *Visual:* Run `python src/engine.py` and open `./outputs/reconciliation_summary.csv`.  
-  *Talking Points:* *"Here is the output across all 13 invoices. Invoice 84901 is idempotently marked completed, preventing duplicate bookings. Invoice 84902 is cleared for allocation review. Invoices 84909 and 84911 are held for underpayment and payment failure. Every record has an assigned operational owner, an SLA, and an actionable next step."*
-- **1:50 – 2:30 | Operations Dashboard & Phased Rollout:**  
-  *Visual:* Display Slide 9 (Command Center Mockup) and Slide 11 (30-60-90 Day Rollout Plan).  
-  *Talking Points:* *"On the Operations dashboard, the Head of Ops sees live SLA countdowns and revenue at risk. We deploy this using a 30-day shadow mode to prove a 0.0% false approval rate before sunsetting the teacher renewal form. This design protects student retention while saving dozens of manual hours every week. Thank you, and I look forward to the live case review!"*
-
----
-
 ## Quickstart & Execution Guide
 
 ### Prerequisites
@@ -392,11 +375,5 @@ bambinos-renewal-automation/
 └── README.md                                  # Complete System Documentation
 ```
 
-### Submission Checklist
-- [x] **Deliverable A:** Root-Cause Problem Audit & 13-Invoice Failure Mode Breakdown completed.
-- [x] **Deliverable B:** Two-Gate Re-Engineered Architecture & Teacher Form Sunset documented.
-- [x] **Deliverable C:** Standalone Python Prototype (`src/engine.py`) and Unit Tests (`tests/test_reconciliation.py`) passing with 100% ground-truth accuracy.
-- [x] **Deliverable D:** Operations Command Center Dashboard wireframe, RACI matrix, and 30-60-90 day change plan finalized.
-- [x] **Compulsory PDF Deck:** 12-slide high-resolution presentation generated (`Bambinos_AI_PM_Case_Deck.pdf`).
-- [x] **Optional Loom Script:** Crisp 2.5-minute script ready for recording.
+
 
